@@ -1,0 +1,161 @@
+/* Matte Black & Red Theme */
+html, body {
+    color: #f0f0f0;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    flex: 1;
+    background-color: #1a1a1a;
+}
+
+/* Navbar */
+.custom-navbar {
+    background-color: #1a1a1a !important;
+}
+
+.navbar-brand,
+.nav-link {
+    color: #f0f0f0 !important;
+}
+
+.nav-link:hover {
+    color: #ff4d4d !important;
+}
+
+.text-red {
+    color: #ff4d4d !important;
+}
+.nav-link.active {
+    color: #ff4d4d !important;
+    font-weight: bold;
+  }
+.bg-red {
+    background-color: #8b0000 !important;
+}
+
+/* Logo in Navbar */
+.navbar-logo img.navbar-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.navbar-logo {
+    z-index: 10;
+}
+
+/* Video Background */
+.video-wrapper {
+    position: relative;
+    height: 70vh;
+    overflow: hidden;
+    
+}
+/* Responsive text sizes */
+@media (min-width: 768px) {
+    .video-wrapper {
+        position: relative;
+        height: 70vh;
+        overflow: hidden;
+        
+    }
+}
+
+@media (max-width: 767.98px) {
+    .video-wrapper {
+        position: relative;
+        height: 60vh;
+       
+        
+    }
+}
+
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* Top-left text overlay */
+.top-left-text {
+    z-index: 2;
+    border-left: 4px solid #ff4d4d;
+    color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.top-left-text h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.top-left-text p {
+    font-size: 1rem;
+    margin: 0.5rem 0 0;
+    color: #ff4d4d;
+}
+
+/* Responsive text sizes */
+@media (min-width: 768px) {
+    .top-left-text h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .top-left-text h1 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Background section with SVG */
+.svg-background-section {
+    background-image: url('https://raw.githubusercontent.com/omgo101/stockphoto/main/blob-scene-haikei.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 400px;
+  }
+  /* Background section with SVG */
+.svg2-background-section {
+    background-image: url('https://raw.githubusercontent.com/omgo101/stockphoto/main/wave-haikei%20(1).svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 400px;
+  }
+  
+/* Footer */
+.footer {
+    background-color: #111111;
+    margin-top: auto;
+}
+/* Button positioned bottom center */
+.video-button-container {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.btn-red {
+    background-color: #8b0000;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    transition: background-color 0.3s ease;
+}
+
+
+  
+  

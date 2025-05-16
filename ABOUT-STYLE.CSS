@@ -1,0 +1,78 @@
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-image: url('https://github.com/omgo101/stockphoto/blob/main/circle-scatter-haikei.svg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+}
+.nav-link.active {
+    color: #ff4d4d !important;
+    font-weight: bold;
+}
+.about-hero {
+    padding: 100px 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 50px;
+}
+
+.team-card {
+    background: rgba(30, 30, 30, 0.8);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    margin-bottom: 30px;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+}
+
+.team-img {
+    height: 250px;
+    object-fit: cover;
+}
+
+.values-section {
+    background: rgba(20, 20, 20, 0.9);
+    padding: 60px 0;
+    margin: 50px 0;
+}
+
+.value-icon {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #dc3545;
+}
+
+/* .timeline {
+    position: relative;
+    padding-left: 50px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #dc3545;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -38px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #dc3545;
+    border: 3px solid #fff;
+} */

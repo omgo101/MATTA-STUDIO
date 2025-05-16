@@ -1,0 +1,90 @@
+html, body {
+    color: #f0f0f0;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    flex: 1;
+    background-color: #1a1a1a;
+}
+/* Navbar */
+.custom-navbar {
+    background-color: #1a1a1a !important;
+}
+
+.navbar-brand,
+.nav-link {
+    color: #f0f0f0 !important;
+}
+
+.nav-link:hover {
+    color: #ff4d4d !important;
+}
+.nav-link.active {
+  color: #ff4d4d !important;
+  font-weight: bold;
+}
+.text-red {
+    color: #ff4d4d !important;
+}
+
+.bg-red {
+    background-color: #8b0000 !important;
+}
+
+/* Logo in Navbar */
+.navbar-logo img.navbar-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.navbar-logo {
+    z-index: 10;
+}
+.svg2-background-section {
+    background-image: url('https://raw.githubusercontent.com/omgo101/stockphoto/main/wave-haikei%20(1).svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 400px;
+  }
+    /* Flip Card Styles */
+    .flip-card {
+        perspective: 1000px;
+        height: 250px; /* Fixed height for consistency */
+      }
+    
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+      }
+    
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+    
+      .flip-card-front, .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+      }
+    
+      .flip-card-back {
+        transform: rotateY(180deg);
+      }
+    
+      /* Responsive adjustments */
+      @media (max-width: 576px) {
+        .flip-card {
+          height: 200px;
+        }
+      }
+ 

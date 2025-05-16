@@ -1,0 +1,192 @@
+/* Base Styles */
+html, body {
+    color: #f0f0f0;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+      background-image: url('https://raw.githubusercontent.com/omgo101/stockphoto/main/wave-haikei%20(1).svg');
+    background-size: cover;
+}
+
+/* Navbar */
+.custom-navbar {
+    background-color: #1a1a1a !important;
+}
+
+.navbar-brand,
+.nav-link {
+    color: #f0f0f0 !important;
+}
+.nav-link.active {
+    color: #ff4d4d !important;
+    font-weight: bold;
+}
+.nav-link:hover {
+    color: #ff4d4d !important;
+}
+
+.nav-link.active {
+    color: #ff4d4d !important;
+    font-weight: bold;
+}
+
+.text-red {
+    color: #ff4d4d !important;
+}
+
+.bg-red {
+    background-color: #8b0000 !important;
+}
+
+/* Logo in Navbar */
+.navbar-logo img.navbar-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.navbar-logo {
+    z-index: 10;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 5rem 0;
+}
+
+.contact-form, .contact-info {
+    background-color: #2a2a2a;
+    border: 1px solid #444;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form:hover, .contact-info:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.contact-item .icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-red {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    transition: all 0.3s ease;
+}
+
+.btn-red:hover {
+    background-color: #8b0000;
+    transform: translateY(-2px);
+}
+
+/* Map Container */
+.map-container {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border: 2px solid #444;
+}
+
+/* Footer */
+.footer {
+    background-color: #1a1a1a;
+}
+
+.footer a:hover {
+    color: #ff4d4d !important;
+}
+
+/* Animations */
+[data-aos] {
+    transition-property: opacity, transform;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 3rem 0;
+    }
+    
+    .navbar-logo {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        margin: 0 auto;
+    }
+}
+/* WhatsApp floating button */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    z-index: 9999;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    background-color: #128C7E;
+}
+
+/* Tooltip - Always Visible */
+.whatsapp-tooltip {
+    position: absolute;
+    right: 70px;
+    background-color: #128C7E;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 1;
+    pointer-events: none;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+        bottom: 15px;
+        right: 15px;
+    }
+    .whatsapp-tooltip {
+        right: 60px;
+        font-size: 13px;
+        padding: 5px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .whatsapp-float {
+        width: 45px;
+        height: 45px;
+        font-size: 22px;
+        bottom: 10px;
+        right: 10px;
+    }
+    .whatsapp-tooltip {
+        right: 50px;
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+}

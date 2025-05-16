@@ -1,0 +1,241 @@
+/* Base Styles */
+html, body {
+    color: #f0f0f0;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+}
+
+/* Background Pattern */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://raw.githubusercontent.com/omgo101/stockphoto/62b0d7e0fc890e6d891b2a4205b498067c1b6a60/circle-scatter-haikei.svg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+/* Navbar */
+.custom-navbar {
+    background-color: #1a1a1a !important;
+    border-bottom: 1px solid rgba(255, 77, 77, 0.2);
+}
+
+.navbar-brand,
+.nav-link {
+    color: #f0f0f0 !important;
+}
+
+.nav-link:hover {
+    color: #ff4d4d !important;
+}
+
+.nav-link.active {
+    color: #ff4d4d !important;
+    font-weight: bold;
+}
+
+.text-red {
+    color: #ff4d4d !important;
+}
+
+.bg-red {
+    background-color: #8b0000 !important;
+}
+
+/* Logo in Navbar */
+.navbar-logo img.navbar-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.navbar-logo {
+    z-index: 10;
+}
+
+/* Updated Work Hero Section */
+.work-hero {
+    padding: 60px 0; /* Reduced from 100px */
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    height: 300px; /* Fixed height */
+    display: flex;
+    align-items: center;
+    background-image: url('https://images.unsplash.com/photo-1485846234645-a62644f84728?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+
+.work-hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(26, 26, 26, 0.7); /* Dark overlay */
+    z-index: 0;
+}
+
+.work-hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+.work-hero h1 {
+    font-size: 3rem; /* Slightly smaller */
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #ff4d4d;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.work-hero p {
+    font-size: 1.25rem;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #f0f0f0;
+    opacity: 0.9;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+/* Work Section */
+.work-section {
+    padding: 80px 0;
+}
+
+.work-item {
+    margin-bottom: 100px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: rgba(26, 26, 26, 0.8);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.work-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+.work-title {
+    color: #ff4d4d;
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.work-role {
+    color: #f0f0f0;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    opacity: 0.9;
+}
+
+.work-description {
+    color: #f0f0f0;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.work-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.btn-outline-light {
+    border-color: #f0f0f0;
+    color: #f0f0f0;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+    background-color: #ff4d4d;
+    border-color: #ff4d4d;
+    color: #1a1a1a;
+}
+
+/* Footer */
+.footer {
+    background-color: #1a1a1a !important;
+    border-top: 1px solid rgba(255, 77, 77, 0.2);
+}
+
+.footer h5 {
+    color: #ff4d4d;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.footer a {
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #ff4d4d !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .work-hero h1 {
+        font-size: 2.8rem;
+    }
+    
+    .work-hero p {
+        font-size: 1.1rem;
+    }
+    
+    .work-title {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .work-hero {
+        padding: 70px 0;
+    }
+    
+    .work-hero h1 {
+        font-size: 2.2rem;
+    }
+    
+    .work-item {
+        margin-bottom: 70px;
+        padding: 20px;
+    }
+    
+    .work-item .col-lg-6 {
+        margin-bottom: 30px;
+    }
+    
+    .work-item .order-lg-1, 
+    .work-item .order-lg-2 {
+        order: 0;
+    }
+}
