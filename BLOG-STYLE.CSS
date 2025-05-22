@@ -1,0 +1,216 @@
+
+    html, body {
+      color: #f0f0f0;
+      font-family: 'Roboto Condensed', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #1a1a1a;
+    }
+    
+    .custom-navbar {
+    background-color: #1a1a1a !important;
+    z-index: 1041;
+  }
+  
+  .navbar-brand,
+  .nav-link {
+    color: #f0f0f0 !important;
+  }
+  
+  .nav-link.active {
+    color: #ff4d4d !important;
+    font-weight: bold;
+  }
+  
+  .nav-link:hover {
+    color: #ff4d4d !important;
+  }
+  
+  .text-red {
+    color: #ff4d4d !important;
+  }
+  
+  .bg-red {
+    background-color: #8b0000 !important;
+  }
+  
+  .navbar-logo img {
+    width: 32px;
+    height: 32px;
+  }
+  
+  /* Offcanvas Styling */
+  .offcanvas-end {
+    background-color: #1a1a1a;
+    color: white;
+    width: 260px;
+  }
+  
+  .offcanvas .btn-close {
+    filter: invert(1);
+  }
+  
+  .offcanvas-header {
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #333;
+  }
+  
+  .offcanvas-body {
+    padding-top: 40px;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-top: 20px; /* Push menu upwards */
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 1.2rem;
+  }
+  
+  @media (min-width: 992px) {
+    .offcanvas {
+      display: none !important;
+    }
+  }
+/*-----------------------------------------------------------------------------*/
+    .text-red {
+      color: #ff4d4d !important;
+    }
+    
+    .bg-red {
+      background-color: #8b0000 !important;
+    }
+    
+    .navbar-logo img {
+      width: 32px;
+      height: 32px;
+    }
+    
+    /* Blog Header */
+    .blog-header {
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                  url('https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+      background-size: cover;
+      background-position: center;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      margin-bottom: 3rem;
+    }
+    
+    .blog-title {
+      font-size: 4rem;
+      font-weight: 700;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    
+    /* Blog Cards */
+    .blog-card {
+      background: #2a2a2a;
+      border-radius: 8px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      margin-bottom: 2rem;
+      border: none;
+    }
+    
+    .blog-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    }
+    
+    .blog-card-img {
+      height: 250px;
+      object-fit: cover;
+      width: 100%;
+    }
+    
+    .blog-card-body {
+      padding: 2.5rem;
+    }
+    
+    .blog-card-title {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #fff;
+    }
+    
+    .blog-card-text {
+      color: #ccc;
+      margin-bottom: 1.5rem;
+    }
+    
+    .blog-card-date {
+      color: #ff4d4d;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+      display: block;
+    }
+    
+    .read-more-btn {
+      background-color: #ff4d4d;
+      border: none;
+      padding: 0.5rem 1.5rem;
+      border-radius: 4px;
+      color: white;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+    
+    .read-more-btn:hover {
+      background-color: #e60000;
+      color: white;
+    }
+    
+    /* Footer */
+    .footer {
+      background-color: #111;
+      padding: 3rem 0;
+      color: #ccc;
+    }
+    
+    .footer h5 {
+      color: #fff;
+      margin-bottom: 1.5rem;
+    }
+    
+    .footer a {
+      color: #ccc;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    
+    .footer a:hover {
+      color: #ff4d4d;
+    }
+    
+    .footer-bottom {
+      border-top: 1px solid #333;
+      padding-top: 1.5rem;
+      margin-top: 2rem;
+      text-align: center;
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .blog-title {
+        font-size: 2.5rem;
+      }
+      
+      .blog-card-body {
+        padding: 1.5rem;
+      }
+      
+      .blog-card-title {
+        font-size: 1.3rem;
+      }
+    }

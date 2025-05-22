@@ -6,6 +6,81 @@ body {
     background-attachment: fixed;
     color: #fff;
 }
+ /* Navbar styling */
+/* General Navbar Styling */
+.custom-navbar {
+    background-color: #1a1a1a !important;
+    z-index: 1041;
+  }
+  
+  .navbar-brand,
+  .nav-link {
+    color: #f0f0f0 !important;
+  }
+  
+  .nav-link.active {
+    color: #ff4d4d !important;
+    font-weight: bold;
+  }
+  
+  .nav-link:hover {
+    color: #ff4d4d !important;
+  }
+  
+  .text-red {
+    color: #ff4d4d !important;
+  }
+  
+  .bg-red {
+    background-color: #8b0000 !important;
+  }
+  
+  .navbar-logo img {
+    width: 32px;
+    height: 32px;
+  }
+  
+  /* Offcanvas Styling */
+  .offcanvas-end {
+    background-color: #1a1a1a;
+    color: white;
+    width: 260px;
+  }
+  
+  .offcanvas .btn-close {
+    filter: invert(1);
+  }
+  
+  .offcanvas-header {
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #333;
+  }
+  
+  .offcanvas-body {
+    padding-top: 40px;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-top: 20px; /* Push menu upwards */
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 1.2rem;
+  }
+  
+  @media (min-width: 992px) {
+    .offcanvas {
+      display: none !important;
+    }
+  }
+  
+/*-----------------------------------------------------------------------------*/
 .nav-link.active {
     color: #ff4d4d !important;
     font-weight: bold;

@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog - ACT III</title>
+    <link rel="icon" type="image/png"
+        href="https://raw.githubusercontent.com/omgo101/stockphoto/main/icons8-comedy-32%20(1).png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="BLOG-STYLE.CSS">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg custom-navbar position-relative">
+        <div class="container-fluid">
+            <!-- Left: Brand -->
+            <a class="navbar-brand text-red fw-bold fs-3" href="INDEX.HTML">ACT III</a>
+
+            <!-- Center: Logo -->
+            <div class="navbar-logo position-absolute top-50 start-50 translate-middle">
+                <img src="https://raw.githubusercontent.com/omgo101/stockphoto/main/icons8-comedy-32%20(1).png"
+                    alt="Logo" class="navbar-icon">
+            </div>
+
+            <!-- Right: Hamburger toggler -->
+            <button class="navbar-toggler bg-red border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Desktop menu -->
+            <div class="collapse navbar-collapse justify-content-end d-none d-lg-flex" id="navbarNav">
+                <ul class="navbar-nav mb-2 mb-lg-4">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="INDEX.HTML">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="WORK.HTML">Our Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="SERVICE.HTML">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="ABOUT.HTML">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light active" href="BLOG.HTML">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="CONTACT.HTML">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Offcanvas Mobile Menu -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-red" id="mobileMenuLabel">Menu</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="INDEX.HTML">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="WORK.HTML">Our Work</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="SERVICE.HTML">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light " href="ABOUT.HTML">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light active" href="BLOG.HTML">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light " href="CONTACT.HTML">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Blog Header -->
+    <div class="blog-header">
+        <div class="container">
+            <h1 class="blog-title" data-aos="fade-up">ACT III Blog</h1>
+            <p class="lead" data-aos="fade-up" data-aos-delay="200">Insights, Stories & Creative Inspiration</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <!-- Blog Posts Column - Full width on all screens -->
+            <div class="col-lg-10">
+                <!-- Featured Post -->
+                <div class="blog-card" data-aos="fade-up">
+                    <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                        class="blog-card-img" alt="Featured Post">
+                    <div class="blog-card-body">
+                        <span class="blog-card-date">June 15, 2023 • Film Production</span>
+                        <h2 class="blog-card-title">The Art of Storytelling in Commercial Films</h2>
+                        <p class="blog-card-text">Discover how we craft compelling narratives that resonate with
+                            audiences while delivering brand messages effectively. Learn about our unique approach to
+                            blending creativity with marketing objectives.</p>
+                        <a href="#" class="read-more-btn" data-bs-toggle="modal" data-bs-target="#modalFeatured">Read
+                            More</a>
+
+                    </div>
+                </div>
+                <!-- Modal for Featured Post -->
+                <div class="modal fade" id="modalFeatured" tabindex="-1" aria-labelledby="modalFeaturedLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content bg-dark text-light">
+                            <div class="modal-header">
+
+                                <h5 class="modal-title" id="modalFeaturedLabel">The Art of Storytelling in Commercial
+                                    Films</h5>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                                    class="img-fluid mb-3" alt="Featured Post">
+                                <p>Discover how we craft compelling narratives that resonate with audiences while
+                                    delivering brand messages effectively. Learn about our unique approach to blending
+                                    creativity with marketing objectives.</p>
+                                <p>In today’s fast-paced digital world, capturing an audience’s attention is more
+                                    challenging than ever. Commercial films, often limited to mere seconds or a few
+                                    minutes, must do more than just promote a product—they need to tell a story that
+                                    resonates, connects, and lingers in the viewer’s mind. At the heart of every
+                                    successful commercial film lies the timeless art of storytelling.</p>
+
+                                <h5 class="blog-card-title">Crafting Narratives That Resonate</h5>
+                                <p>Storytelling in commercial films is about much more than showcasing features or
+                                    listing benefits. It’s about creating an emotional journey that invites viewers to
+                                    see themselves in the story. When audiences relate to a narrative, they become
+                                    invested—not just in the story, but in the brand behind it.</p>
+
+                                <p>We begin by understanding the core message a brand wants to communicate. From there,
+                                    we build stories that embody those messages while speaking to the hopes, dreams, and
+                                    challenges of the target audience. This approach ensures the narrative feels
+                                    authentic and compelling, transforming a simple advertisement into a memorable
+                                    experience.</p>
+
+                                <h5 class="blog-card-title">Blending Creativity with Marketing Objectives</h5>
+                                A great commercial film strikes a delicate balance between artistry and purpose. While
+                                creativity fuels the emotional and visual impact, marketing objectives keep the
+                                narrative focused and effective. Our process involves collaborating closely with brands
+                                to align creative storytelling with strategic goals.
+
+                                <p>Whether it’s building brand awareness, encouraging a call to action, or reinforcing
+                                    loyalty, every element—from scriptwriting to cinematography—is carefully designed to
+                                    serve the overall marketing strategy. This fusion of creativity and business insight
+                                    elevates commercial films from mere advertisements to powerful brand stories.
+                                </p>
+                                <h5 class="blog-card-title">Why Storytelling Matters in Commercial Films</h5>
+                                <p>Humans are wired to respond to stories. Stories engage our emotions, making messages
+                                    more memorable and persuasive. When commercial films tell a good story, they do more
+                                    than sell a product—they create a connection, build trust, and inspire action.
+                                </p>
+                                <p>In a market flooded with content, storytelling becomes the key differentiator. Brands
+                                    that master this art don’t just communicate what they offer—they communicate why it
+                                    matters.
+                                </p>
+                                <h5 class="blog-card-title">Final Thoughts</h5>
+                                <p>The art of storytelling in commercial films is about creating meaningful connections
+                                    through carefully crafted narratives. By blending creativity with clear marketing
+                                    objectives, we deliver films that not only capture attention but also leave a
+                                    lasting impression. When done right, storytelling transforms commercial films into
+                                    unforgettable brand experiences that resonate deeply with audiences.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 1 -->
+                <div class="blog-card" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1551818255-e6e10975bc17?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                        class="blog-card-img" alt="Post 1">
+                    <div class="blog-card-body">
+                        <span class="blog-card-date">May 28, 2023 • Social Media</span>
+                        <h2 class="blog-card-title">5 Trends Dominating Social Video in 2023</h2>
+                        <p class="blog-card-text">From vertical video to interactive content, we break down the most
+                            important trends you need to know to keep your social media strategy fresh and engaging.</p>
+                        <a href="#" class="read-more-btn" data-bs-toggle="modal" data-bs-target="#modalFeatured2">Read
+                            More</a>
+                    </div>
+                </div>
+                <div class="modal fade" id="modalFeatured2" tabindex="-1" aria-labelledby="modalFeaturedLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content bg-dark text-light">
+                            <div class="modal-header">
+
+                                <h5 class="modal-title" id="modalFeaturedLabel">5 Trends Dominating Social Video in 2023
+                                </h5>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="https://images.unsplash.com/photo-1551818255-e6e10975bc17?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                                    class="img-fluid mb-3" alt="Featured Post">
+
+                                <p class="blog-card-text">
+                                    Social media is constantly evolving, and video continues to lead the charge. In
+                                    2023, staying ahead means understanding the trends that drive engagement and shape
+                                    audience behavior. From the rise of vertical video to the power of interactive
+                                    content, brands must adapt to stay relevant in a crowded digital space.
+                                </p>
+
+                                <p class="blog-card-text">
+                                    One of the biggest shifts we’ve seen is the dominance of vertical video formats,
+                                    thanks to platforms like TikTok, Instagram Reels, and YouTube Shorts. These
+                                    mobile-first experiences demand quick, punchy, and visually appealing content that
+                                    grabs attention within seconds.
+                                </p>
+
+                                <p class="blog-card-text">
+                                    Another major trend is interactivity—polls, quizzes, and clickable elements now play
+                                    a key role in keeping viewers engaged. Social video is no longer passive; it invites
+                                    participation and builds stronger connections between brands and their communities.
+                                </p>
+
+                                <p class="blog-card-text">
+                                    Authenticity is also taking center stage. Audiences crave real, relatable content
+                                    over overly polished productions. Behind-the-scenes clips, user-generated content,
+                                    and raw storytelling are winning hearts—and views.
+                                </p>
+
+                                <p class="blog-card-text">
+                                    To thrive in this dynamic environment, brands must stay agile, experiment often, and
+                                    always keep their audience at the core of their content strategy. Embracing these
+                                    trends isn’t just about following the crowd—it’s about standing out in a meaningful
+                                    way.
+                                </p>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Blog Post 2 -->
+                <div class="blog-card" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                        class="blog-card-img" alt="Post 2">
+                    <div class="blog-card-body">
+                        <span class="blog-card-date">April 12, 2023 • Behind the Scenes</span>
+                        <h2 class="blog-card-title">Making of Our Award-Winning Short Film</h2>
+                        <p class="blog-card-text">Go behind the scenes of our latest project that won Best Short Film at
+                            the National Film Awards. Learn about the challenges, creative decisions, and technical
+                            solutions we implemented.</p>
+                        <a href="#" class="read-more-btn" data-bs-toggle="modal" data-bs-target="#modalFeatured3">Read
+                            More</a>
+                    </div>
+                </div>
+                <div class="modal fade" id="modalFeatured3" tabindex="-1" aria-labelledby="modalFeaturedLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content bg-dark text-light">
+                            <div class="modal-header">
+
+                                <h5 class="modal-title" id="modalFeaturedLabel">Making of Our Award-Winning Short Film
+                                </h5>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                                    class="img-fluid mb-3" alt="Featured Post">
+
+                                <p class="blog-card-text">
+                                    Every great film begins with a bold idea—and ours was no exception. What started as
+                                    a spark of inspiration evolved into a short film that would go on to win Best Short
+                                    Film at the National Film Awards. This journey wasn’t just about crafting a
+                                    compelling story, but about pushing creative and technical boundaries every step of
+                                    the way.
+                                </p>
+
+                                <p class="blog-card-text">
+                                    Behind the scenes, our team faced countless challenges—from tight timelines and
+                                    budget constraints to last-minute location changes. But with every obstacle came an
+                                    opportunity to innovate, collaborate, and adapt. These experiences only strengthened
+                                    the final product.
+                                </p>
+
+                                <p class="blog-card-text">
+                                    Creative decisions played a huge role in shaping the film’s tone and impact. From
+                                    lighting choices that set the emotional atmosphere to camera movements that brought
+                                    tension to life, every frame was designed with intention and care.
+                                </p>
+
+                                <p class="blog-card-text">
+                                    We also leaned into cutting-edge techniques and practical effects to bring our
+                                    vision to life. With a strong focus on storytelling, sound design, and
+                                    post-production magic, the final edit was a true reflection of our team’s passion
+                                    and precision.
+                                </p>
+
+                                <p class="blog-card-text">
+                                    Winning the award was a proud moment, but what we cherish most is the journey
+                                    itself—the late-night brainstorms, the creative risks, and the collective belief
+                                    that we were building something special. And in the end, that belief paid off in the
+                                    most rewarding way.
+                                </p>
+
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Blog Post 3 -->
+                <div class="blog-card" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                        class="blog-card-img" alt="Post 3">
+                    <div class="blog-card-body">
+                        <span class="blog-card-date">March 5, 2023 • Industry Insights</span>
+                        <h2 class="blog-card-title">How Video Content is Changing Consumer Behavior</h2>
+                        <p class="blog-card-text">An in-depth analysis of how video marketing influences purchasing
+                            decisions and what brands can do to leverage this powerful medium effectively.</p>
+                        <a href="#" class="read-more-btn" data-bs-toggle="modal" data-bs-target="#modalFeatured4">Read
+                            More</a>
+                    </div>
+                </div>
+                <div class="modal fade" id="modalFeatured4" tabindex="-1" aria-labelledby="modalFeaturedLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content bg-dark text-light">
+                            <div class="modal-header">
+
+                                <h5 class="modal-title" id="modalFeaturedLabel">How Video Content is Changing Consumer
+                                    Behavior</h5>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                                    class="img-fluid mb-3" alt="Featured Post">
+
+                                <p class="blog-card-text">
+                                    Video has become more than just a storytelling tool—it's now a driving force behind
+                                    how consumers discover, evaluate, and choose products. In today’s digital landscape,
+                                    video content is reshaping the buyer journey and influencing decisions at every
+                                    stage.
+                                </p>
+
+                                <p class="blog-card-text">
+                                    From quick product demos to emotional brand stories, video gives consumers the
+                                    information and confidence they need to make informed choices. It’s visual, it’s
+                                    immediate, and it connects on a level that text and static images often can't.
+                                </p>
+
+                                <p class="blog-card-text">
+                                    Studies show that consumers are more likely to purchase after watching a video. Why?
+                                    Because it builds trust. It offers a real-world look at what a brand offers—how a
+                                    product works, how it feels, and how it fits into a lifestyle.
+                                </p>
+
+                                <p class="blog-card-text">
+                                    For brands, this means adapting their strategy to meet consumers where they are—on
+                                    social feeds, streaming platforms, and mobile devices. The key lies in creating
+                                    authentic, value-driven content that answers questions, solves problems, and sparks
+                                    emotion.
+                                </p>
+
+                                <p class="blog-card-text">
+                                    In an era where attention is currency, video content is the most valuable asset.
+                                    Those who master it won’t just capture eyes—they’ll win hearts, minds, and lasting
+                                    brand loyalty.
+                                </p>
+
+
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Blog Post 4 -->
+                <div class="blog-card" data-aos="fade-up" data-aos-delay="400">
+                    <img src="https://images.unsplash.com/photo-1579389083078-4e7018379f7e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                        class="blog-card-img" alt="Post 4">
+                    <div class="blog-card-body">
+                        <span class="blog-card-date">February 18, 2023 • Technology</span>
+                        <h2 class="blog-card-title">New Camera Gear That's Revolutionizing Our Work</h2>
+                        <p class="blog-card-text">A look at the latest equipment we've added to our arsenal and how it's
+                            helping us push creative boundaries while maintaining efficiency on set.</p>
+                        <a href="#" class="read-more-btn" data-bs-toggle="modal" data-bs-target="#modalFeatured5">Read
+                            More</a>
+                    </div>
+                </div>
+                <div class="modal fade" id="modalFeatured5" tabindex="-1" aria-labelledby="modalFeaturedLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content bg-dark text-light">
+                            <div class="modal-header">
+
+                                <h5 class="modal-title" id="modalFeaturedLabel">New Camera Gear That's Revolutionizing
+                                    Our Work</h5>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="https://images.unsplash.com/photo-1579389083078-4e7018379f7e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                                    class="img-fluid mb-3" alt="Featured Post">
+
+                                <p class="blog-card-text">
+                                    In the world of filmmaking, the right gear doesn’t just make a difference—it
+                                    transforms what's possible. We’re always on the lookout for tools that help us bring
+                                    stories to life with greater clarity, creativity, and control. Our latest additions
+                                    are doing exactly that.
+                                </p>
+
+                                <p class="blog-card-text">
+                                    From high-resolution cinema cameras to lightweight gimbals and cutting-edge lenses,
+                                    our new equipment is opening doors to shots we once only dreamed of. Whether it's
+                                    capturing ultra-smooth motion or shooting in challenging lighting conditions, these
+                                    tools are elevating our visual storytelling.
+                                </p>
+
+                                <p class="blog-card-text">
+                                    But it’s not just about stunning visuals. This gear is also enhancing our
+                                    workflow—making shoots faster, setups more flexible, and edits more seamless. On-set
+                                    efficiency means we can focus more on performance, direction, and the creative
+                                    process itself.
+                                </p>
+
+                                <p class="blog-card-text">
+                                    Each piece of equipment we invest in is chosen with intention. It’s not about having
+                                    the latest tech just for the sake of it—it’s about choosing tools that empower us to
+                                    tell more powerful stories, with precision and purpose.
+                                </p>
+
+                                <p class="blog-card-text">
+                                    As we continue to push the boundaries of what’s possible in commercial and narrative
+                                    filmmaking, our gear is growing with us—fueling innovation, enhancing quality, and
+                                    helping us deliver work that truly stands out.
+                                </p>
+
+
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>ACT III</h5>
+                    <p>High-quality productions for creatives, agencies, and visionaries. Studio-quality results, every
+                        time.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="INDEX.HTML">Home</a></li>
+                        <li><a href="WORK.HTML">Our Work</a></li>
+                        <li><a href="SERVICE.HTML">Services</a></li>
+                        <li><a href="ABOUT.HTML">About</a></li>
+                        <li><a href="BLOG.HTML">Blog</a></li>
+                        <li><a href="CONTACT.HTML">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Contact Us</h5>
+                    <p>Email: contact@act3.in</p>
+                    <p>Phone: +91 8788133949</p>
+                    <div>
+                        <a href="https://www.instagram.com/protean_matta/" class="text-white me-3"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/channel/UCtnwtaV4CYBrm33CZEPOqpA" class="text-white"><i
+                                class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ACT III. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
